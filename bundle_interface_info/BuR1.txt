@@ -1,0 +1,52 @@
+interface Port-channel1
+ description Logical-link-to-R2
+ bandwidth 400
+ ip address 172.17.12.1 255.255.255.252
+ no negotiation auto
+ no mop enabled
+ no mop sysid
+interface GigabitEthernet1
+ description Link to Management
+ vrf forwarding Mgmt-intf
+ ip address 10.10.20.221 255.255.255.0
+ negotiation auto
+ no mop enabled
+ no mop sysid
+interface GigabitEthernet2
+ description Link to R2
+ bandwidth 100
+ no ip address
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ channel-group 1 mode active
+interface GigabitEthernet3
+ description Link to R2
+ bandwidth 100
+ no ip address
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ channel-group 1 mode active
+interface GigabitEthernet4
+ description Link to R2
+ bandwidth 100
+ no ip address
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ channel-group 1 mode active
+interface GigabitEthernet5
+ description Link to R2
+ bandwidth 100
+ no ip address
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ channel-group 1 mode active
+interface GigabitEthernet6
+ description Link to LAN
+ ip address 192.168.16.1 255.255.255.0
+ negotiation auto
+ no mop enabled
+ no mop sysid

@@ -1,0 +1,61 @@
+interface GigabitEthernet1
+ description Link to Management
+ vrf forwarding Mgmt-intf
+ ip address 10.10.20.204 255.255.255.0
+ negotiation auto
+ no mop enabled
+ no mop sysid
+interface GigabitEthernet2
+ description Link to R1
+ bandwidth 100
+ ip address 172.16.14.2 255.255.255.252
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ service-policy input POLICY-ALL-CoPP
+ service-policy output POLICY-ALL-CoPP
+interface GigabitEthernet3
+ description Link to R5
+ bandwidth 100
+ ip address 172.16.45.1 255.255.255.252
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ service-policy input POLICY-ALL-CoPP
+ service-policy output POLICY-ALL-CoPP
+interface GigabitEthernet4
+ description Link to R3
+ bandwidth 100
+ ip address 172.16.34.2 255.255.255.252
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ service-policy input POLICY-ALL-CoPP
+ service-policy output POLICY-ALL-CoPP
+interface GigabitEthernet5
+ description Link to R2
+ bandwidth 100
+ ip address 172.16.24.2 255.255.255.252
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ service-policy input POLICY-ALL-CoPP
+ service-policy output POLICY-ALL-CoPP
+interface GigabitEthernet6
+ description Link to R8
+ bandwidth 100
+ ip address 172.16.48.1 255.255.255.252
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ service-policy input POLICY-ALL-CoPP
+ service-policy output POLICY-ALL-CoPP
+interface GigabitEthernet7
+ description Link to R6
+ bandwidth 100
+ ip address 172.16.46.1 255.255.255.252
+ negotiation auto
+ no mop enabled
+ no mop sysid
+ service-policy input POLICY-ALL-CoPP
+ service-policy output POLICY-ALL-CoPP
