@@ -1,0 +1,1742 @@
+lab:
+  description: ''
+  notes: ''
+  title: Diploma2_lab
+  version: 0.2.0
+links:
+  - id: l0
+    n1: n1
+    n2: n0
+    i1: i0
+    i2: i0
+    label: unmanaged-switch-0-port0<->Bridge-to-Sandbox-port
+  - id: l1
+    n1: n2
+    n2: n1
+    i1: i1
+    i2: i1
+    label: R1-GigabitEthernet1<->unmanaged-switch-0-port1
+  - id: l2
+    n1: n3
+    n2: n1
+    i1: i1
+    i2: i2
+    label: R2-GigabitEthernet1<->unmanaged-switch-0-port2
+  - id: l3
+    n1: n4
+    n2: n1
+    i1: i1
+    i2: i3
+    label: R3-GigabitEthernet1<->unmanaged-switch-0-port3
+  - id: l4
+    n1: n5
+    n2: n1
+    i1: i1
+    i2: i4
+    label: R4-GigabitEthernet1<->unmanaged-switch-0-port4
+  - id: l5
+    n1: n6
+    n2: n1
+    i1: i1
+    i2: i5
+    label: R5-GigabitEthernet1<->unmanaged-switch-0-port5
+  - id: l6
+    n1: n2
+    n2: n3
+    i1: i2
+    i2: i2
+    label: R1-GigabitEthernet2<->R2-GigabitEthernet2
+  - id: l7
+    n1: n2
+    n2: n4
+    i1: i3
+    i2: i2
+    label: R1-GigabitEthernet3<->R3-GigabitEthernet2
+  - id: l8
+    n1: n2
+    n2: n5
+    i1: i4
+    i2: i2
+    label: R1-GigabitEthernet4<->R4-GigabitEthernet2
+  - id: l9
+    n1: n6
+    n2: n3
+    i1: i2
+    i2: i3
+    label: R5-GigabitEthernet2<->R2-GigabitEthernet3
+  - id: l10
+    n1: n4
+    n2: n6
+    i1: i3
+    i2: i3
+    label: R3-GigabitEthernet3<->R5-GigabitEthernet3
+  - id: l11
+    n1: n5
+    n2: n6
+    i1: i3
+    i2: i4
+    label: R4-GigabitEthernet3<->R5-GigabitEthernet4
+  - id: l12
+    n1: n7
+    n2: n2
+    i1: i0
+    i2: i5
+    label: unmanaged-switch-1-port0<->R1-GigabitEthernet5
+  - id: l13
+    n1: n8
+    n2: n6
+    i1: i0
+    i2: i5
+    label: unmanaged-switch-2-port0<->R5-GigabitEthernet5
+  - id: l14
+    n1: n3
+    n2: n4
+    i1: i4
+    i2: i4
+    label: R2-GigabitEthernet4<->R3-GigabitEthernet4
+  - id: l15
+    n1: n4
+    n2: n5
+    i1: i5
+    i2: i4
+    label: R3-GigabitEthernet5<->R4-GigabitEthernet4
+  - id: l16
+    n1: n5
+    n2: n3
+    i1: i5
+    i2: i5
+    label: R4-GigabitEthernet5<->R2-GigabitEthernet5
+  - id: l17
+    n1: n9
+    n2: n7
+    i1: i0
+    i2: i1
+    label: alpine-0-eth0<->unmanaged-switch-1-port1
+  - id: l18
+    n1: n10
+    n2: n8
+    i1: i0
+    i2: i1
+    label: alpine-1-eth0<->unmanaged-switch-2-port1
+  - id: l19
+    n1: n12
+    n2: n1
+    i1: i1
+    i2: i6
+    label: csr1000v-1-GigabitEthernet1<->unmanaged-switch-0-port6
+  - id: l20
+    n1: n11
+    n2: n1
+    i1: i1
+    i2: i7
+    label: csr1000v-0-GigabitEthernet1<->unmanaged-switch-0-port7
+  - id: l21
+    n1: n13
+    n2: n1
+    i1: i1
+    i2: i8
+    label: csr1000v-2-GigabitEthernet1<->unmanaged-switch-0-port8
+  - id: l22
+    n1: n14
+    n2: n13
+    i1: i0
+    i2: i5
+    label: unmanaged-switch-3-port0<->csr1000v-2-GigabitEthernet5
+  - id: l23
+    n1: n13
+    n2: n12
+    i1: i2
+    i2: i2
+    label: csr1000v-2-GigabitEthernet2<->csr1000v-1-GigabitEthernet2
+  - id: l24
+    n1: n13
+    n2: n11
+    i1: i3
+    i2: i3
+    label: csr1000v-2-GigabitEthernet3<->csr1000v-0-GigabitEthernet3
+  - id: l25
+    n1: n18
+    n2: n8
+    i1: i0
+    i2: i2
+    label: alpine-5-eth0<->unmanaged-switch-2-port2
+  - id: l26
+    n1: n15
+    n2: n14
+    i1: i0
+    i2: i1
+    label: alpine-2-eth0<->unmanaged-switch-3-port1
+  - id: l27
+    n1: n17
+    n2: n14
+    i1: i0
+    i2: i2
+    label: alpine-4-eth0<->unmanaged-switch-3-port2
+  - id: l28
+    n1: n16
+    n2: n7
+    i1: i0
+    i2: i2
+    label: alpine-3-eth0<->unmanaged-switch-1-port2
+  - id: l29
+    n1: n12
+    n2: n2
+    i1: i3
+    i2: i6
+    label: R7-GigabitEthernet3<->R1-GigabitEthernet6
+  - id: l30
+    n1: n11
+    n2: n6
+    i1: i2
+    i2: i6
+    label: R6-GigabitEthernet2<->R5-GigabitEthernet6
+  - id: l31
+    n1: n11
+    n2: n3
+    i1: i4
+    i2: i6
+    label: R6-GigabitEthernet4<->R2-GigabitEthernet6
+  - id: l32
+    n1: n12
+    n2: n4
+    i1: i4
+    i2: i6
+    label: R7-GigabitEthernet4<->R3-GigabitEthernet6
+  - id: l33
+    n1: n11
+    n2: n5
+    i1: i5
+    i2: i7
+    label: R6-GigabitEthernet5<->R4-GigabitEthernet7
+  - id: l34
+    n1: n13
+    n2: n5
+    i1: i4
+    i2: i6
+    label: R8-GigabitEthernet4<->R4-GigabitEthernet6
+nodes:
+  - boot_disk_size: null
+    configuration: bridge0
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: Bridge-to-Sandbox
+    node_definition: external_connector
+    ram: null
+    tags: []
+    x: -120
+    y: -280
+    interfaces:
+      - id: i0
+        label: port
+        slot: 0
+        type: physical
+  - boot_disk_size: null
+    configuration: ums-c9ddf854-9e
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: null
+    label: unmanaged-switch-0
+    node_definition: unmanaged_switch
+    ram: null
+    tags: []
+    x: -320
+    y: -280
+    interfaces:
+      - id: i0
+        label: port0
+        slot: 0
+        type: physical
+      - id: i1
+        label: port1
+        slot: 1
+        type: physical
+      - id: i2
+        label: port2
+        slot: 2
+        type: physical
+      - id: i3
+        label: port3
+        slot: 3
+        type: physical
+      - id: i4
+        label: port4
+        slot: 4
+        type: physical
+      - id: i5
+        label: port5
+        slot: 5
+        type: physical
+      - id: i6
+        label: port6
+        slot: 6
+        type: physical
+      - id: i7
+        label: port7
+        slot: 7
+        type: physical
+      - id: i8
+        label: port8
+        slot: 8
+        type: physical
+  - boot_disk_size: null
+    configuration: "Building configuration...\n\nCurrent configuration : 8133 bytes\n\
+      !\n! Last configuration change at 12:24:04 UTC Sun Nov 26 2023\n!\nversion 17.3\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service password-encryption\n! Call-home is enabled by Smart-Licensing.\nservice\
+      \ call-home\nplatform qfp utilization monitor load 80\nplatform punt-keepalive\
+      \ disable-kernel-core\nplatform console serial\n!\nhostname R1\n!\nboot-start-marker\n\
+      boot-end-marker\n!\n!\nvrf definition Mgmt-intf\n !\n address-family ipv4\n\
+      \ exit-address-family\n!\nno logging console\nenable secret 9 $9$iEd4N/rHjp04aE$ROkyQQXhdcOGyUGSyH0SYnTVcqcunMCS.Pe2XhL..b6\n\
+      !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nip domain name\
+      \ diploma2.com\n!\n!\n!\nlogin on-success log\n!\n!\n!\n!\n!\n!\n!\nsubscriber\
+      \ templating\n!\n!\n!\n!\n!\n!\nmultilink bundle-name authenticated\n!\n!\n\
+      !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint TP-self-signed-3182197926\n\
+      \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-3182197926\n\
+      \ revocation-check none\n rsakeypair TP-self-signed-3182197926\n!\ncrypto pki\
+      \ trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check crl\n!\n\
+      !\ncrypto pki certificate chain TP-self-signed-3182197926\n certificate self-signed\
+      \ 01\n  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+      \  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+      \  69666963 6174652D 33313832 31393739 3236301E 170D3233 31313236 31313536\n\
+      \  32395A17 0D333331 31323531 31353632 395A3031 312F302D 06035504 03132649\n\
+      \  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 31383231\n\
+      \  39373932 36308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201\n\
+      \  0A028201 0100ABC1 81508C86 063BCAAB A136578F B581AAD2 E387BB55 67E91C5C\n\
+      \  0A5D01C4 D29735A7 7E19B0E0 2F54B49B 5D3A51B2 E690AC0F D6A635A1 8C301E67\n\
+      \  B5E9BE79 F7739250 55655635 D47A125A A12F7821 3291C107 B0A2CE54 B46331E5\n\
+      \  E835ECDA 6D53FA9C 9705E1C0 835B6BD1 DDA058A4 B727880E 7DEDC3CB CD2AF9BB\n\
+      \  C0A50C01 E169914E 9390CEF5 51373F07 74276C17 7D00FEBD 98544289 AD6C4180\n\
+      \  D5201C34 83550DBE 29969CAF 8F261988 C89A9F5E 5FB6435A 22CA209C A0557220\n\
+      \  B6E5368E 16A9098B 0B141D36 01D30F6A 7A9E569C 53CFEA33 042848F3 C4E0FA74\n\
+      \  6BC1EEFC 07EC5973 3AF0C78A DAD35EE0 FAFB07B4 EC01FDF1 B3114FC3 ACCE60B5\n\
+      \  8FD358B3 8BCB0203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF\n\
+      \  301F0603 551D2304 18301680 146736DD 23605D1E AAC5DA54 7023CBBD 7EA62AFB\n\
+      \  FA301D06 03551D0E 04160414 6736DD23 605D1EAA C5DA5470 23CBBD7E A62AFBFA\n\
+      \  300D0609 2A864886 F70D0101 05050003 82010100 A8DE42FD D9712856 9D77452C\n\
+      \  88B143AF 6DE54DD4 A12F1F5B F46E9F35 E254DC1F 60599BBC 9B2597B1 54A2F959\n\
+      \  A4AC7396 2B9634CD 90B9EDAB 2B1707DD 39E4C69D F520735C 68C08690 7728288E\n\
+      \  3DB66253 8713FEC0 6F9F4597 74040A37 D86879F3 D8019F9E 9A000A31 42E37C2A\n\
+      \  AFA98F15 E7C06B3A F28591F0 46318AFD E2B81BE5 AE8F48B3 18B7C392 28D17132\n\
+      \  54CF3F0A BF7571A3 2F722D6E 2C2B25D4 B455181F BA7F6593 C48D24B2 773655CF\n\
+      \  3DCC059C 8167355B 84AFF913 DB52F4F2 C927F309 0EBC26AF 0DF3A31C 4E91AC8C\n\
+      \  5A3FE480 D4EA3285 A535D399 FE12D71D 84F66D4C 1862C63A D7E52641 9A4DE943\n\
+      \  B2A1BC67 283834E6 68A98B22 BE015F3C DDDCAF2D\n  \tquit\ncrypto pki certificate\
+      \ chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209 A0030201 02020101\
+      \ 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355 040A1305 43697363\
+      \ 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73 696E6720 526F6F74\
+      \ 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338 30353330 31393438\
+      \ 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030 1E060355 04031317\
+      \ 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130 82012230 0D06092A\
+      \ 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100 A6BCBD96 131E05F7\
+      \ 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147 C655D8D7 9471380D\
+      \ 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239 C659F715 B98C0A59\
+      \ 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96\
+      \ 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD C847A2C5 DAB553EB\
+      \ 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7 948E71D7 AE3BCC84\
+      \ F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62 EA2F505D C7B062A4\
+      \ 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD 3D992327 A8BB03BD\
+      \ 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1 02030100 01A34230\
+      \ 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13 0101FF04 05300301\
+      \ 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17 606AF333 3D3B4C73\
+      \ E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24 D3932A66 86025D9F\
+      \ E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B 77FC460E CD636FDB\
+      \ DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E 1AECA0C2 2189BB5C\
+      \ 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700 6ADF0F0D CF835015\
+      \ 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB\
+      \ E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F 494E8A9E 07B85737\
+      \ F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA EEBC7CF9 8428787B\
+      \ 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049 4D10AB75 27E86F73\
+      \ 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \tquit\n!\nlicense udi\
+      \ pid CSR1000V sn 9XSDBHRT1AN\ndiagnostic bootup level minimal\nmemory free\
+      \ low-watermark processor 71489\n!\n!\nspanning-tree extend system-id\n!\nusername\
+      \ Boti privilege 15 secret 9 $9$j06gEZIRhWW1EE$FlfwqkOenK8IwT9kjDbiQ/QQ9PPzWbf6gL1qMZr6An6\n\
+      !\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\nclass-map match-all CLASS-ALL-CoPP\n\
+      \ match access-group name ALL-CoPP\n!\npolicy-map POLICY-ALL-CoPP\n class CLASS-ALL-CoPP\n\
+      \  police 100000 conform-action transmit  exceed-action drop  violate-action\
+      \ drop\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface GigabitEthernet1\n\
+      \ description Link to Management\n vrf forwarding Mgmt-intf\n ip address 10.10.20.201\
+      \ 255.255.255.0\n negotiation auto\n no mop enabled\n no mop sysid\n!\ninterface\
+      \ GigabitEthernet2\n description Link to R2\n bandwidth 100\n ip address 172.16.12.1\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet3\n description Link to R3\n bandwidth 100\n ip address 172.16.13.1\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet4\n description Link to R4\n bandwidth 100\n ip address 172.16.14.1\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet5\n description Link to LAN\n ip address 192.168.15.1 255.255.255.0\n\
+      \ negotiation auto\n no mop enabled\n no mop sysid\n service-policy input POLICY-ALL-CoPP\n\
+      \ service-policy output POLICY-ALL-CoPP\n!\ninterface GigabitEthernet6\n description\
+      \ Link to R7\n bandwidth 100\n ip address 172.16.17.1 255.255.255.252\n negotiation\
+      \ auto\n no mop enabled\n no mop sysid\n service-policy input POLICY-ALL-CoPP\n\
+      \ service-policy output POLICY-ALL-CoPP\n!\nrouter ospf 1\n router-id 1.1.1.1\n\
+      \ network 0.0.0.0 255.255.255.255 area 0\n!\nip forward-protocol nd\nip http\
+      \ server\nip http authentication local\nip http secure-server\n!\nip route vrf\
+      \ Mgmt-intf 0.0.0.0 0.0.0.0 10.10.20.254\nip ssh version 2\n!\nip access-list\
+      \ standard permit_snmp\n 10 permit any\n!\nip access-list extended ALL-CoPP\n\
+      \ 10 permit ip any any\n!\n!\n!\nsnmp-server community public RO permit_snmp\n\
+      !\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\nbanner motd ^C***********************************************\n\
+      WARNING: Unauthorized access is prohibited!\n***********************************************\n\
+      ^C\n!\nline con 0\n exec-timeout 0 0\n password 7 121A0C041104\n logging synchronous\n\
+      \ login\n stopbits 1\nline vty 0 4\n exec-timeout 0 0\n password 7 121A0C041104\n\
+      \ logging synchronous\n login local\n transport input ssh\nline vty 5 530\n\
+      \ password 7 104D000A0618\n logging synchronous\n login local\n transport input\
+      \ ssh\n!\ncall-home\n ! If contact email address in call-home is configured\
+      \ as sch-smart-licensing@cisco.com\n ! the email address configured in Cisco\
+      \ Smart License Portal will be used as contact email address to send SCH notifications.\n\
+      \ contact-email-addr sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n\
+      \  active\n  destination transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: R1
+    node_definition: csr1000v
+    ram: null
+    tags: []
+    x: -400
+    y: 40
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet2
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet3
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet4
+        slot: 3
+        type: physical
+      - id: i5
+        label: GigabitEthernet5
+        slot: 4
+        type: physical
+      - id: i6
+        label: GigabitEthernet6
+        slot: 5
+        type: physical
+  - boot_disk_size: null
+    configuration: "Building configuration...\n\nCurrent configuration : 8148 bytes\n\
+      !\n! Last configuration change at 12:24:59 UTC Sun Nov 26 2023\n!\nversion 17.3\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service password-encryption\n! Call-home is enabled by Smart-Licensing.\nservice\
+      \ call-home\nplatform qfp utilization monitor load 80\nplatform punt-keepalive\
+      \ disable-kernel-core\nplatform console serial\n!\nhostname R2\n!\nboot-start-marker\n\
+      boot-end-marker\n!\n!\nvrf definition Mgmt-intf\n !\n address-family ipv4\n\
+      \ exit-address-family\n!\nno logging console\nenable secret 9 $9$UFOAR8pezmvwGU$vCDpqloXlecbhAafNuZEQuyN7dU58ylKhrUzkPKrLt2\n\
+      !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nip domain name\
+      \ diploma2.com\n!\n!\n!\nlogin on-success log\n!\n!\n!\n!\n!\n!\n!\nsubscriber\
+      \ templating\n!\n!\n!\n!\n!\n!\nmultilink bundle-name authenticated\n!\n!\n\
+      !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint TP-self-signed-1251526930\n\
+      \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-1251526930\n\
+      \ revocation-check none\n rsakeypair TP-self-signed-1251526930\n!\ncrypto pki\
+      \ trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check crl\n!\n\
+      !\ncrypto pki certificate chain TP-self-signed-1251526930\n certificate self-signed\
+      \ 01\n  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+      \  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+      \  69666963 6174652D 31323531 35323639 3330301E 170D3233 31313236 31313333\n\
+      \  32325A17 0D333331 31323531 31333332 325A3031 312F302D 06035504 03132649\n\
+      \  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D31 32353135\n\
+      \  32363933 30308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201\n\
+      \  0A028201 01009E2F 501C5767 2DEE166A B623545D 1FCC10A2 72C6529B 741CFA7D\n\
+      \  F6581358 9D2CAFBE 8842DD7E F5A769C8 D3D88604 725E892A 8ACAA165 07A25FA3\n\
+      \  FEBB95E9 1E9A3CAC 6DB2B7AA 45A7589A F276092B 116A0FF1 088C0EC9 3206FEF4\n\
+      \  5C5A6231 6A017337 EB60D4D3 0D08129A A68F2082 B0EDAA00 073A8F61 B21C79B9\n\
+      \  9ED45BE5 3ED7C6E9 3D0BEB3D 59A9CF67 4A3A9317 504E084F B8A3014C 6F287779\n\
+      \  D22FFA90 8B1D26B9 5B10B26A 15E06075 49B73843 340D179F 2B5392A1 A3C9B9A0\n\
+      \  3474ABF0 86D5AE63 44DADF46 CCCA2101 AEC24B90 93BEE964 B3C01F8C 1D28CDE5\n\
+      \  45FBCDB6 CDF4C101 2FDF4427 211CAB4F 4DD6D11D ACE4C28A 61C397E0 2A7D055E\n\
+      \  28EFBE6D 5A630203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF\n\
+      \  301F0603 551D2304 18301680 14C41A4C D2525493 05C04B5D E6E37371 34D3BB35\n\
+      \  6F301D06 03551D0E 04160414 C41A4CD2 52549305 C04B5DE6 E3737134 D3BB356F\n\
+      \  300D0609 2A864886 F70D0101 05050003 82010100 94F01B0F 042A285C BB7216BA\n\
+      \  773AB2D6 5BDE35D5 CDAF5BAA 4E5744C5 DD12B667 EAF58218 3839107B DBFA04DD\n\
+      \  9EC10098 4435906B 837B69A5 EE8B70D8 A94899C6 946E5216 B5EC58E4 82BD82C3\n\
+      \  F5D90BB5 797DD1A3 1EC45D10 FDB18A8F CAEDFAB6 9C7CB4D6 563CE5C2 F398407B\n\
+      \  77AD64B8 DE792E76 AB124827 1325E32C EB886CC8 9821C781 AB458B19 140557AB\n\
+      \  51DB6415 B131A08A B8C5A168 DD5514F6 D06DA883 01600CCA 8D240F54 E9A889CC\n\
+      \  FDB0FEB6 0A3037FE 505D0C6C 11D5BAAD C0404310 77BA5F63 AE25C4F4 83CD2ACA\n\
+      \  23F1C7A5 613A7A3A 3D3963BA 5BAEE1A6 55F06D1D B89EF40F 37447F0A 971793FE\n\
+      \  1A04CF37 CAAFE2BC 2C589DF7 11E6E059 9D315161\n  \tquit\ncrypto pki certificate\
+      \ chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209 A0030201 02020101\
+      \ 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355 040A1305 43697363\
+      \ 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73 696E6720 526F6F74\
+      \ 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338 30353330 31393438\
+      \ 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030 1E060355 04031317\
+      \ 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130 82012230 0D06092A\
+      \ 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100 A6BCBD96 131E05F7\
+      \ 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147 C655D8D7 9471380D\
+      \ 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239 C659F715 B98C0A59\
+      \ 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96\
+      \ 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD C847A2C5 DAB553EB\
+      \ 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7 948E71D7 AE3BCC84\
+      \ F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62 EA2F505D C7B062A4\
+      \ 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD 3D992327 A8BB03BD\
+      \ 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1 02030100 01A34230\
+      \ 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13 0101FF04 05300301\
+      \ 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17 606AF333 3D3B4C73\
+      \ E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24 D3932A66 86025D9F\
+      \ E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B 77FC460E CD636FDB\
+      \ DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E 1AECA0C2 2189BB5C\
+      \ 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700 6ADF0F0D CF835015\
+      \ 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB\
+      \ E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F 494E8A9E 07B85737\
+      \ F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA EEBC7CF9 8428787B\
+      \ 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049 4D10AB75 27E86F73\
+      \ 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \tquit\n!\nlicense udi\
+      \ pid CSR1000V sn 9373NWWTX77\ndiagnostic bootup level minimal\nmemory free\
+      \ low-watermark processor 71489\n!\n!\nspanning-tree extend system-id\n!\nusername\
+      \ Boti privilege 15 secret 9 $9$nJIUXX.HmqmkH.$bdRg3KhZxvSPU/GjsreVSXpzM5I6lkfQvoP1vXJKNFo\n\
+      !\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\nclass-map match-all CLASS-ALL-CoPP\n\
+      \ match access-group name ALL-CoPP\n!\npolicy-map POLICY-ALL-CoPP\n class CLASS-ALL-CoPP\n\
+      \  police 100000 conform-action transmit  exceed-action drop  violate-action\
+      \ drop\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface GigabitEthernet1\n\
+      \ description Link to Management\n vrf forwarding Mgmt-intf\n ip address 10.10.20.202\
+      \ 255.255.255.0\n negotiation auto\n no mop enabled\n no mop sysid\n!\ninterface\
+      \ GigabitEthernet2\n description Link to R1\n bandwidth 100\n ip address 172.16.12.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet3\n description Link to R5\n bandwidth 100\n ip address 172.16.25.1\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet4\n description Link to R3\n bandwidth 100\n ip address 172.16.23.1\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet5\n description Link to R4\n bandwidth 100\n ip address 172.16.24.1\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet6\n description Link to R6\n bandwidth 100\n ip address 172.16.26.1\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\nrouter ospf\
+      \ 1\n router-id 2.2.2.2\n network 0.0.0.0 255.255.255.255 area 0\n!\nip forward-protocol\
+      \ nd\nip http server\nip http authentication local\nip http secure-server\n\
+      !\nip route vrf Mgmt-intf 0.0.0.0 0.0.0.0 10.10.20.254\nip ssh version 2\n!\n\
+      ip access-list standard permit_snmp\n 10 permit any\n!\nip access-list extended\
+      \ ALL-CoPP\n 10 permit ip any any\n!\n!\n!\nsnmp-server community public RO\
+      \ permit_snmp\n!\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\nbanner motd ^C***********************************************\n\
+      WARNING: Unauthorized access is prohibited!\n***********************************************\n\
+      ^C\n!\nline con 0\n exec-timeout 0 0\n password 7 121A0C041104\n logging synchronous\n\
+      \ login\n stopbits 1\nline vty 0 4\n exec-timeout 0 0\n password 7 121A0C041104\n\
+      \ logging synchronous\n login local\n transport input ssh\nline vty 5 530\n\
+      \ password 7 02050D480809\n logging synchronous\n login local\n transport input\
+      \ ssh\n!\ncall-home\n ! If contact email address in call-home is configured\
+      \ as sch-smart-licensing@cisco.com\n ! the email address configured in Cisco\
+      \ Smart License Portal will be used as contact email address to send SCH notifications.\n\
+      \ contact-email-addr sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n\
+      \  active\n  destination transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n3
+    image_definition: null
+    label: R2
+    node_definition: csr1000v
+    ram: null
+    tags: []
+    x: -40
+    y: -40
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet2
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet3
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet4
+        slot: 3
+        type: physical
+      - id: i5
+        label: GigabitEthernet5
+        slot: 4
+        type: physical
+      - id: i6
+        label: GigabitEthernet6
+        slot: 5
+        type: physical
+  - boot_disk_size: null
+    configuration: "Building configuration...\n\nCurrent configuration : 8148 bytes\n\
+      !\n! Last configuration change at 12:26:51 UTC Sun Nov 26 2023\n!\nversion 17.3\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service password-encryption\n! Call-home is enabled by Smart-Licensing.\nservice\
+      \ call-home\nplatform qfp utilization monitor load 80\nplatform punt-keepalive\
+      \ disable-kernel-core\nplatform console serial\n!\nhostname R3\n!\nboot-start-marker\n\
+      boot-end-marker\n!\n!\nvrf definition Mgmt-intf\n !\n address-family ipv4\n\
+      \ exit-address-family\n!\nno logging console\nenable secret 9 $9$ecBXYjmXJs.QQU$x3K6m8DqK9bInQ1cJO13aIBfwiOKMTmuPQQ0fLzNjKg\n\
+      !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nip domain name\
+      \ diploma2.com\n!\n!\n!\nlogin on-success log\n!\n!\n!\n!\n!\n!\n!\nsubscriber\
+      \ templating\n!\n!\n!\n!\n!\n!\nmultilink bundle-name authenticated\n!\n!\n\
+      !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint TP-self-signed-4147776849\n\
+      \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-4147776849\n\
+      \ revocation-check none\n rsakeypair TP-self-signed-4147776849\n!\ncrypto pki\
+      \ trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check crl\n!\n\
+      !\ncrypto pki certificate chain TP-self-signed-4147776849\n certificate self-signed\
+      \ 01\n  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+      \  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+      \  69666963 6174652D 34313437 37373638 3439301E 170D3233 31313236 31313536\n\
+      \  32375A17 0D333331 31323531 31353632 375A3031 312F302D 06035504 03132649\n\
+      \  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D34 31343737\n\
+      \  37363834 39308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201\n\
+      \  0A028201 0100ABBE 6EF8F680 B88D58B7 824D4511 8E9B7657 C2CFA4F7 67CC3E3B\n\
+      \  891FD0BD DD1C1B1D F715CB18 290B0C6C B9A9D22B D388F059 D20E639B 5B36D81D\n\
+      \  541FB5E2 159EC99B 38B2AF39 22468054 C8A11B68 9114291A 6FEE9E1F 3D78834A\n\
+      \  CA56D68D 90D493CF 41385533 1E1BF7AB E81B0C7B B9025552 3BCC3496 4220F971\n\
+      \  6465A33D 66F9B4FF 6827EC7F 31BE3F0C BA1B21E1 62A6BF52 6FA4B882 8C1EAF8A\n\
+      \  B9FFA1BE 271A0759 10E2AC56 D93EDAE3 BAD9B13E E99A910B 9133FC96 F83E082C\n\
+      \  E4865DF5 66E4634A 9C62E1B3 C82B76CF 9FC74264 717A6564 57C3428B 20D493DB\n\
+      \  FA70995C 4F3B18A7 C1A536F1 2250B0B7 CEE5A8EE BF383EBC 9F4A5BB3 C8CAD201\n\
+      \  19F16B61 0BF90203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF\n\
+      \  301F0603 551D2304 18301680 14C5AB5C 6B2180C4 24938C89 208484EA D16752F1\n\
+      \  B9301D06 03551D0E 04160414 C5AB5C6B 2180C424 938C8920 8484EAD1 6752F1B9\n\
+      \  300D0609 2A864886 F70D0101 05050003 82010100 AB6DB444 F5321304 2CEC4EBA\n\
+      \  901C9923 C935B522 E2C6C2AA CA4C751B 9652D1FA 00296CB8 DB9BA87A 9C55B958\n\
+      \  235D6B3C 7BFAD4DD B7B5A028 70848D4A AEAEDB21 1D979B8B FC488A3B 68C7546D\n\
+      \  31B3A425 19DC068E EA041598 4E558B31 EBD7A146 9A605C59 D0FF5577 1070A058\n\
+      \  25A888D4 D9DE5512 F08F8F0B 0F1DF92D F84B6416 55C5197E 40B195EF 7CF4FEAF\n\
+      \  895A3759 2E31807F FCABD632 AFF1D26B AAF2D59D FDF05951 91315849 E8CEC9D4\n\
+      \  8E9842D4 B834D024 AC79C2CE A6370292 1C4717FA 77A20CED 712D29E5 6D18A1DF\n\
+      \  6B749B3E 9211EE10 48DCA48F 68FB2FAB 1DDA86D7 9D739220 10897051 ED00CD18\n\
+      \  8424214F 7BEAEA3E DAC331ED 909F2264 482B5F82\n  \tquit\ncrypto pki certificate\
+      \ chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209 A0030201 02020101\
+      \ 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355 040A1305 43697363\
+      \ 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73 696E6720 526F6F74\
+      \ 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338 30353330 31393438\
+      \ 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030 1E060355 04031317\
+      \ 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130 82012230 0D06092A\
+      \ 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100 A6BCBD96 131E05F7\
+      \ 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147 C655D8D7 9471380D\
+      \ 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239 C659F715 B98C0A59\
+      \ 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96\
+      \ 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD C847A2C5 DAB553EB\
+      \ 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7 948E71D7 AE3BCC84\
+      \ F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62 EA2F505D C7B062A4\
+      \ 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD 3D992327 A8BB03BD\
+      \ 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1 02030100 01A34230\
+      \ 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13 0101FF04 05300301\
+      \ 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17 606AF333 3D3B4C73\
+      \ E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24 D3932A66 86025D9F\
+      \ E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B 77FC460E CD636FDB\
+      \ DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E 1AECA0C2 2189BB5C\
+      \ 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700 6ADF0F0D CF835015\
+      \ 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB\
+      \ E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F 494E8A9E 07B85737\
+      \ F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA EEBC7CF9 8428787B\
+      \ 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049 4D10AB75 27E86F73\
+      \ 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \tquit\n!\nlicense udi\
+      \ pid CSR1000V sn 9Q3LEMDU4US\ndiagnostic bootup level minimal\nmemory free\
+      \ low-watermark processor 71489\n!\n!\nspanning-tree extend system-id\n!\nusername\
+      \ Boti privilege 15 secret 9 $9$xcsNUL0pjvpDT.$Fh1iJTToWa1DFBzxrDglGzZ7bZd44/TVO8i9yPp9sKA\n\
+      !\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\nclass-map match-all CLASS-ALL-CoPP\n\
+      \ match access-group name ALL-CoPP\n!\npolicy-map POLICY-ALL-CoPP\n class CLASS-ALL-CoPP\n\
+      \  police 100000 conform-action transmit  exceed-action drop  violate-action\
+      \ drop\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface GigabitEthernet1\n\
+      \ description Link to Management\n vrf forwarding Mgmt-intf\n ip address 10.10.20.203\
+      \ 255.255.255.0\n negotiation auto\n no mop enabled\n no mop sysid\n!\ninterface\
+      \ GigabitEthernet2\n description Link to R1\n bandwidth 100\n ip address 172.16.13.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet3\n description Link to R5\n bandwidth 100\n ip address 172.16.35.1\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet4\n description Link to R2\n bandwidth 100\n ip address 172.16.23.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet5\n description Link to R4\n bandwidth 100\n ip address 172.16.34.1\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet6\n description Link to R7\n bandwidth 100\n ip address 172.16.37.1\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\nrouter ospf\
+      \ 1\n router-id 3.3.3.3\n network 0.0.0.0 255.255.255.255 area 0\n!\nip forward-protocol\
+      \ nd\nip http server\nip http authentication local\nip http secure-server\n\
+      !\nip route vrf Mgmt-intf 0.0.0.0 0.0.0.0 10.10.20.254\nip ssh version 2\n!\n\
+      ip access-list standard permit_snmp\n 10 permit any\n!\nip access-list extended\
+      \ ALL-CoPP\n 10 permit ip any any\n!\n!\n!\nsnmp-server community public RO\
+      \ permit_snmp\n!\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\nbanner motd ^C***********************************************\n\
+      WARNING: Unauthorized access is prohibited!\n***********************************************\n\
+      ^C\n!\nline con 0\n exec-timeout 0 0\n password 7 14141B180F0B\n logging synchronous\n\
+      \ login\n stopbits 1\nline vty 0 4\n exec-timeout 0 0\n password 7 14141B180F0B\n\
+      \ logging synchronous\n login local\n transport input ssh\nline vty 5 530\n\
+      \ password 7 045802150C2E\n logging synchronous\n login local\n transport input\
+      \ ssh\n!\ncall-home\n ! If contact email address in call-home is configured\
+      \ as sch-smart-licensing@cisco.com\n ! the email address configured in Cisco\
+      \ Smart License Portal will be used as contact email address to send SCH notifications.\n\
+      \ contact-email-addr sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n\
+      \  active\n  destination transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n4
+    image_definition: null
+    label: R3
+    node_definition: csr1000v
+    ram: null
+    tags: []
+    x: -160
+    y: 80
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet2
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet3
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet4
+        slot: 3
+        type: physical
+      - id: i5
+        label: GigabitEthernet5
+        slot: 4
+        type: physical
+      - id: i6
+        label: GigabitEthernet6
+        slot: 5
+        type: physical
+  - boot_disk_size: null
+    configuration: "Building configuration...\n\nCurrent configuration : 8381 bytes\n\
+      !\n! Last configuration change at 12:31:02 UTC Sun Nov 26 2023\n!\nversion 17.3\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service password-encryption\n! Call-home is enabled by Smart-Licensing.\nservice\
+      \ call-home\nplatform qfp utilization monitor load 80\nplatform punt-keepalive\
+      \ disable-kernel-core\nplatform console serial\n!\nhostname R4\n!\nboot-start-marker\n\
+      boot-end-marker\n!\n!\nvrf definition Mgmt-intf\n !\n address-family ipv4\n\
+      \ exit-address-family\n!\nno logging console\nenable secret 9 $9$HjFNr1pRVbp6y.$yT/I5RQGEXxBgmaGsMoLm1dFwopTZitItndkT7pZEyU\n\
+      !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nip domain name\
+      \ diploma2.com\n!\n!\n!\nlogin on-success log\n!\n!\n!\n!\n!\n!\n!\nsubscriber\
+      \ templating\n!\n!\n!\n!\n!\n!\nmultilink bundle-name authenticated\n!\n!\n\
+      !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint TP-self-signed-3757403265\n\
+      \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-3757403265\n\
+      \ revocation-check none\n rsakeypair TP-self-signed-3757403265\n!\ncrypto pki\
+      \ trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check crl\n!\n\
+      !\ncrypto pki certificate chain TP-self-signed-3757403265\n certificate self-signed\
+      \ 01\n  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+      \  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+      \  69666963 6174652D 33373537 34303332 3635301E 170D3233 31313236 31323237\n\
+      \  33385A17 0D333331 31323531 32323733 385A3031 312F302D 06035504 03132649\n\
+      \  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 37353734\n\
+      \  30333236 35308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201\n\
+      \  0A028201 0100B412 587EA8F4 5EEBD32D 30768AFD 588E2B79 4F0C142E 39A67CF5\n\
+      \  CBFDB7B6 AED252DD 5F58E61A 30D29F4B 64C5E8FF B6302E39 E6128E1F 65EDD991\n\
+      \  1275CCC7 893A85AA 6CB085B8 A2A133A1 0F144D88 E62CFC9F 42517EDD E7360DD7\n\
+      \  6A43349F 493C76AD 507B1742 4E57932D A736AFC0 4D6DB397 DB25103E B85F428C\n\
+      \  4FBDFAC5 1830A677 30E15EAE DE1CF1F2 C1A86A42 9B39B0E7 5F280514 470951B2\n\
+      \  618FD6B8 951AB4FB 0BE7B857 FD894688 F4AC7F3C 9E785FB4 8BC4E3EC EDFAA5F0\n\
+      \  5D3F35D2 4F15B921 C78CE8B4 9C233898 ACBD85A7 C35D8459 F3370135 04E0F180\n\
+      \  2D01D741 C5A0FA02 03F46E67 33C377DB BD2E8B0E 24C565E0 5B6BD2A0 1BBE163C\n\
+      \  36AD9B16 C4810203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF\n\
+      \  301F0603 551D2304 18301680 14C9F7AD 56FA5F2D 108B663C 94854ADB C36750A3\n\
+      \  63301D06 03551D0E 04160414 C9F7AD56 FA5F2D10 8B663C94 854ADBC3 6750A363\n\
+      \  300D0609 2A864886 F70D0101 05050003 82010100 02C4F5B0 6F950B52 1391010C\n\
+      \  68FBC252 17630F17 54639D7E 344F21CE C7C251CC 44FCDE81 31D50C26 EA45A77F\n\
+      \  79CEA764 7FCDCB54 C487F5CE 758F7C2A EFC9C582 E3BD077D 7307DC37 D683FAC1\n\
+      \  311A94B7 C0DBEED2 6E54A3F8 FCA6B5F5 CCE67B0C 2C483EF2 92F72C56 953769BD\n\
+      \  C6FC5CD7 4B5AE043 26BBD520 D9E65C8F 4C9A2F4F 598F4787 89D0ABBF 42C2C33D\n\
+      \  2BB2918D E20BA121 DB5C9C6D F9516B84 A58BF08A 4E4DF917 875739F5 2618B75D\n\
+      \  9D99AD13 8529101D A8BAB795 975B2577 8E5E6B1A A5CC6FC7 F658CAF3 24820E9A\n\
+      \  00BC5ADE 5FA2BF2C A9D96441 AA3C7D53 08F9F5B3 9574AD79 D20A368F C8760976\n\
+      \  ED9232B0 77BE0D94 38E992F9 856C9FE5 087F9740\n  \tquit\ncrypto pki certificate\
+      \ chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209 A0030201 02020101\
+      \ 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355 040A1305 43697363\
+      \ 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73 696E6720 526F6F74\
+      \ 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338 30353330 31393438\
+      \ 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030 1E060355 04031317\
+      \ 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130 82012230 0D06092A\
+      \ 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100 A6BCBD96 131E05F7\
+      \ 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147 C655D8D7 9471380D\
+      \ 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239 C659F715 B98C0A59\
+      \ 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96\
+      \ 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD C847A2C5 DAB553EB\
+      \ 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7 948E71D7 AE3BCC84\
+      \ F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62 EA2F505D C7B062A4\
+      \ 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD 3D992327 A8BB03BD\
+      \ 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1 02030100 01A34230\
+      \ 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13 0101FF04 05300301\
+      \ 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17 606AF333 3D3B4C73\
+      \ E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24 D3932A66 86025D9F\
+      \ E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B 77FC460E CD636FDB\
+      \ DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E 1AECA0C2 2189BB5C\
+      \ 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700 6ADF0F0D CF835015\
+      \ 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB\
+      \ E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F 494E8A9E 07B85737\
+      \ F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA EEBC7CF9 8428787B\
+      \ 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049 4D10AB75 27E86F73\
+      \ 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \tquit\n!\nlicense udi\
+      \ pid CSR1000V sn 9XQLOMW3K06\ndiagnostic bootup level minimal\nmemory free\
+      \ low-watermark processor 71489\n!\n!\nspanning-tree extend system-id\n!\nusername\
+      \ Boti privilege 15 secret 9 $9$Q50YH5yB6HHaT.$B8Hv4469VAHdnA4ia9fUMw1Bvp12pEm3gxOrgsGvDJU\n\
+      !\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\nclass-map match-all CLASS-ALL-CoPP\n\
+      \ match access-group name ALL-CoPP\n!\npolicy-map POLICY-ALL-CoPP\n class CLASS-ALL-CoPP\n\
+      \  police 100000 conform-action transmit  exceed-action drop  violate-action\
+      \ drop\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface GigabitEthernet1\n\
+      \ description Link to Management\n vrf forwarding Mgmt-intf\n ip address 10.10.20.204\
+      \ 255.255.255.0\n negotiation auto\n no mop enabled\n no mop sysid\n!\ninterface\
+      \ GigabitEthernet2\n description Link to R1\n bandwidth 100\n ip address 172.16.14.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet3\n description Link to R5\n bandwidth 100\n ip address 172.16.45.1\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet4\n description Link to R3\n bandwidth 100\n ip address 172.16.34.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet5\n description Link to R2\n bandwidth 100\n ip address 172.16.24.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet6\n description Link to R8\n bandwidth 100\n ip address 172.16.48.1\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet7\n description Link to R6\n bandwidth 100\n ip address 172.16.46.1\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\nrouter ospf\
+      \ 1\n router-id 4.4.4.4\n network 0.0.0.0 255.255.255.255 area 0\n!\nip forward-protocol\
+      \ nd\nip http server\nip http authentication local\nip http secure-server\n\
+      !\nip route vrf Mgmt-intf 0.0.0.0 0.0.0.0 10.10.20.254\nip ssh version 2\n!\n\
+      ip access-list standard permit_snmp\n 10 permit any\n!\nip access-list extended\
+      \ ALL-CoPP\n 10 permit ip any any\n!\n!\n!\nsnmp-server community public RO\
+      \ permit_snmp\n!\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\nbanner motd ^C***********************************************\n\
+      WARNING: Unauthorized access is prohibited!\n***********************************************\n\
+      ^C\n!\nline con 0\n exec-timeout 0 0\n password 7 060506324F41\n logging synchronous\n\
+      \ login\n stopbits 1\nline vty 0 4\n exec-timeout 0 0\n password 7 060506324F41\n\
+      \ logging synchronous\n login local\n transport input ssh\nline vty 5 530\n\
+      \ password 7 13061E010803\n logging synchronous\n login local\n transport input\
+      \ ssh\n!\ncall-home\n ! If contact email address in call-home is configured\
+      \ as sch-smart-licensing@cisco.com\n ! the email address configured in Cisco\
+      \ Smart License Portal will be used as contact email address to send SCH notifications.\n\
+      \ contact-email-addr sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n\
+      \  active\n  destination transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n5
+    image_definition: null
+    label: R4
+    node_definition: csr1000v
+    ram: null
+    tags: []
+    x: -160
+    y: 240
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet2
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet3
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet4
+        slot: 3
+        type: physical
+      - id: i5
+        label: GigabitEthernet5
+        slot: 4
+        type: physical
+      - id: i6
+        label: GigabitEthernet6
+        slot: 5
+        type: physical
+      - id: i7
+        label: GigabitEthernet7
+        slot: 6
+        type: physical
+  - boot_disk_size: null
+    configuration: "Building configuration...\n\nCurrent configuration : 8056 bytes\n\
+      !\n! Last configuration change at 12:31:48 UTC Sun Nov 26 2023\n!\nversion 17.3\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service password-encryption\n! Call-home is enabled by Smart-Licensing.\nservice\
+      \ call-home\nplatform qfp utilization monitor load 80\nplatform punt-keepalive\
+      \ disable-kernel-core\nplatform console serial\n!\nhostname R5\n!\nboot-start-marker\n\
+      boot-end-marker\n!\n!\nvrf definition Mgmt-intf\n !\n address-family ipv4\n\
+      \ exit-address-family\n!\nno logging console\nenable secret 9 $9$Fu1AxAA4CDKLv.$KxAu7/l.dTOquExd01WseTXJ.tv7TYe6cWSjjbHf0Es\n\
+      !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nip domain name\
+      \ diploma2.com\n!\n!\n!\nlogin on-success log\n!\n!\n!\n!\n!\n!\n!\nsubscriber\
+      \ templating\n!\n!\n!\n!\n!\n!\nmultilink bundle-name authenticated\n!\n!\n\
+      !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint TP-self-signed-3674222249\n\
+      \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-3674222249\n\
+      \ revocation-check none\n rsakeypair TP-self-signed-3674222249\n!\ncrypto pki\
+      \ trustpoint SLA-TrustPoint\n enrollment pkcs12\n revocation-check crl\n!\n\
+      !\ncrypto pki certificate chain TP-self-signed-3674222249\n certificate self-signed\
+      \ 01\n  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+      \  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+      \  69666963 6174652D 33363734 32323232 3439301E 170D3233 31313236 31313536\n\
+      \  33375A17 0D333331 31323531 31353633 375A3031 312F302D 06035504 03132649\n\
+      \  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 36373432\n\
+      \  32323234 39308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201\n\
+      \  0A028201 0100B487 629DFC68 47DC322E AB371352 68970F64 A64D8F2D B079B2F0\n\
+      \  FFE9562C D40FEA50 7208AE3B 39712690 93AA39C0 1482E6D1 D7B3493B 609D6AF4\n\
+      \  9E37E09F A3DDCB5A BF2C3B05 501203DE 6713D11F 8FE078A9 3E54FFF7 A4B37BCA\n\
+      \  F60F56D1 4869E67A EEFDB27F D5BB48B8 7DDE589A CDCB609E E95E60A0 8610658E\n\
+      \  4ECD5318 B0EAC5EC 7AADE2C2 1782575E 1250E740 790A122E 0FF4A89E 9694CA5F\n\
+      \  413FCD34 221CF5C0 A035C4EF B76AAC6E 3FE273F9 90D4D960 3CA02CAA 49C2C8E8\n\
+      \  E58B46D1 01E9E0AF A6233C0A E42603F0 387D3B77 A3FFC561 3D61300D 38D6BA8C\n\
+      \  E4859495 91B62B93 3E2B377C 86B0D57A DD1891D9 81683535 7FB2D001 15B4B8DF\n\
+      \  FEBECD39 AB930203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF\n\
+      \  301F0603 551D2304 18301680 14D50898 CAE97295 3319EB54 58C3E495 362BF201\n\
+      \  D0301D06 03551D0E 04160414 D50898CA E9729533 19EB5458 C3E49536 2BF201D0\n\
+      \  300D0609 2A864886 F70D0101 05050003 82010100 8AD49FDE 6A3FC830 BFB66CC2\n\
+      \  1F33D361 A16644F4 F10F43D2 54BF37EC 44AA8E84 604FB560 1B608F59 658A15BA\n\
+      \  D933E16A 743839AA B29F2305 B5DACDA9 BACF8C7D 426DAAAC 799A9EED C63B1FC5\n\
+      \  F094B970 BA3B5568 99BD14C7 5B555CB1 625C8464 F10BC1E2 21AAB671 9D7D9913\n\
+      \  3B4D9590 11D8FB4C C39CB0FF BD3F22EF ABC21E84 DC118B50 1131553B 9D3CB39C\n\
+      \  DEC74823 93EC80E4 1788C654 E4F65318 A4330A50 30594658 93EAE15E 80D8C434\n\
+      \  2235FB25 B2C85F00 BA7D793F 2D54362E 9515C30B 408323C9 F961E289 B5FB58FB\n\
+      \  723C7D5F DB9EF7D9 B06276A9 80B37139 FE38C83B 3B344AF5 6B86F62A 15B35171\n\
+      \  4D959E1F 4D89E066 4188E3C4 ECFD5A77 A465A5F8\n  \tquit\ncrypto pki certificate\
+      \ chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209 A0030201 02020101\
+      \ 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355 040A1305 43697363\
+      \ 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73 696E6720 526F6F74\
+      \ 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338 30353330 31393438\
+      \ 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030 1E060355 04031317\
+      \ 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130 82012230 0D06092A\
+      \ 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100 A6BCBD96 131E05F7\
+      \ 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147 C655D8D7 9471380D\
+      \ 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239 C659F715 B98C0A59\
+      \ 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96\
+      \ 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD C847A2C5 DAB553EB\
+      \ 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7 948E71D7 AE3BCC84\
+      \ F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62 EA2F505D C7B062A4\
+      \ 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD 3D992327 A8BB03BD\
+      \ 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1 02030100 01A34230\
+      \ 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13 0101FF04 05300301\
+      \ 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17 606AF333 3D3B4C73\
+      \ E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24 D3932A66 86025D9F\
+      \ E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B 77FC460E CD636FDB\
+      \ DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E 1AECA0C2 2189BB5C\
+      \ 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700 6ADF0F0D CF835015\
+      \ 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB\
+      \ E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F 494E8A9E 07B85737\
+      \ F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA EEBC7CF9 8428787B\
+      \ 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049 4D10AB75 27E86F73\
+      \ 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \tquit\n!\nlicense udi\
+      \ pid CSR1000V sn 9V4MNXLV82R\ndiagnostic bootup level minimal\nmemory free\
+      \ low-watermark processor 71489\n!\n!\nspanning-tree extend system-id\n!\nusername\
+      \ Boti privilege 15 secret 9 $9$wT0zRTWE9ieX1E$88YGyDuEMTMJSWt/tNl5k.izJc0ae3Wqnb2GyaTOwms\n\
+      !\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\nclass-map match-all CLASS-ALL-CoPP\n\
+      \ match access-group name ALL-CoPP\n!\npolicy-map POLICY-ALL-CoPP\n class CLASS-ALL-CoPP\n\
+      \  police 100000 conform-action transmit  exceed-action drop  violate-action\
+      \ drop\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface GigabitEthernet1\n\
+      \ description Link to Management\n vrf forwarding Mgmt-intf\n ip address 10.10.20.205\
+      \ 255.255.255.0\n negotiation auto\n no mop enabled\n no mop sysid\n!\ninterface\
+      \ GigabitEthernet2\n description Link to R2\n bandwidth 100\n ip address 172.16.25.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet3\n description Link to R3\n bandwidth 100\n ip address 172.16.35.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet4\n description Link to R4\n bandwidth 100\n ip address 172.16.45.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet5\n description Link to LAN\n ip address 192.168.55.1 255.255.255.0\n\
+      \ negotiation auto\n no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet6\n\
+      \ description Link to R4\n bandwidth 100\n ip address 172.16.56.1 255.255.255.252\n\
+      \ negotiation auto\n no mop enabled\n no mop sysid\n service-policy input POLICY-ALL-CoPP\n\
+      \ service-policy output POLICY-ALL-CoPP\n!\nrouter ospf 1\n router-id 5.5.5.5\n\
+      \ network 0.0.0.0 255.255.255.255 area 0\n!\nip forward-protocol nd\nip http\
+      \ server\nip http authentication local\nip http secure-server\n!\nip route vrf\
+      \ Mgmt-intf 0.0.0.0 0.0.0.0 10.10.20.254\nip ssh version 2\n!\nip access-list\
+      \ standard permit_snmp\n 10 permit any\n!\nip access-list extended ALL-CoPP\n\
+      \ 10 permit ip any any\n!\n!\n!\nsnmp-server community public RO permit_snmp\n\
+      !\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\nbanner motd ^C***********************************************\n\
+      WARNING: Unauthorized access is prohibited!\n***********************************************\n\
+      ^C\n!\nline con 0\n exec-timeout 0 0\n password 7 02050D480809\n logging synchronous\n\
+      \ login\n stopbits 1\nline vty 0 4\n exec-timeout 0 0\n password 7 02050D480809\n\
+      \ logging synchronous\n login local\n transport input ssh\nline vty 5 530\n\
+      \ password 7 14141B180F0B\n logging synchronous\n login local\n transport input\
+      \ ssh\n!\ncall-home\n ! If contact email address in call-home is configured\
+      \ as sch-smart-licensing@cisco.com\n ! the email address configured in Cisco\
+      \ Smart License Portal will be used as contact email address to send SCH notifications.\n\
+      \ contact-email-addr sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n\
+      \  active\n  destination transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n6
+    image_definition: null
+    label: R5
+    node_definition: csr1000v
+    ram: null
+    tags: []
+    x: 160
+    y: 0
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet2
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet3
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet4
+        slot: 3
+        type: physical
+      - id: i5
+        label: GigabitEthernet5
+        slot: 4
+        type: physical
+      - id: i6
+        label: GigabitEthernet6
+        slot: 5
+        type: physical
+  - boot_disk_size: null
+    configuration: ums-95691fb5-4c
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n7
+    image_definition: null
+    label: unmanaged-switch-1
+    node_definition: unmanaged_switch
+    ram: null
+    tags: []
+    x: -560
+    y: 40
+    interfaces:
+      - id: i0
+        label: port0
+        slot: 0
+        type: physical
+      - id: i1
+        label: port1
+        slot: 1
+        type: physical
+      - id: i2
+        label: port2
+        slot: 2
+        type: physical
+      - id: i3
+        label: port3
+        slot: 3
+        type: physical
+      - id: i4
+        label: port4
+        slot: 4
+        type: physical
+      - id: i5
+        label: port5
+        slot: 5
+        type: physical
+      - id: i6
+        label: port6
+        slot: 6
+        type: physical
+      - id: i7
+        label: port7
+        slot: 7
+        type: physical
+  - boot_disk_size: null
+    configuration: ums-b020952a-b3
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n8
+    image_definition: null
+    label: unmanaged-switch-2
+    node_definition: unmanaged_switch
+    ram: null
+    tags: []
+    x: 280
+    y: 0
+    interfaces:
+      - id: i0
+        label: port0
+        slot: 0
+        type: physical
+      - id: i1
+        label: port1
+        slot: 1
+        type: physical
+      - id: i2
+        label: port2
+        slot: 2
+        type: physical
+      - id: i3
+        label: port3
+        slot: 3
+        type: physical
+      - id: i4
+        label: port4
+        slot: 4
+        type: physical
+      - id: i5
+        label: port5
+        slot: 5
+        type: physical
+      - id: i6
+        label: port6
+        slot: 6
+        type: physical
+      - id: i7
+        label: port7
+        slot: 7
+        type: physical
+  - boot_disk_size: null
+    configuration: |-
+      # this is a shell script which will be sourced at boot
+      hostname Client_1
+      # configurable user account
+      USERNAME=cisco
+      PASSWORD=cisco
+      ip address add 192.168.15.3/24 dev eth0
+      ip link set dev eth0 up
+      ip route add default via 192.168.15.1
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n9
+    image_definition: null
+    label: Client_1
+    node_definition: alpine
+    ram: null
+    tags: []
+    x: -560
+    y: -120
+    interfaces:
+      - id: i0
+        label: eth0
+        slot: 0
+        type: physical
+  - boot_disk_size: null
+    configuration: |-
+      # this is a shell script which will be sourced at boot
+      hostname Client_3
+      # configurable user account
+      USERNAME=cisco
+      PASSWORD=cisco
+      ip address add 192.168.55.3/24 dev eth0
+      ip link set dev eth0 up
+      ip route add default via 192.168.55.1
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n10
+    image_definition: null
+    label: Client_3
+    node_definition: alpine
+    ram: null
+    tags: []
+    x: 280
+    y: -120
+    interfaces:
+      - id: i0
+        label: eth0
+        slot: 0
+        type: physical
+  - boot_disk_size: null
+    configuration: "Building configuration...\n\nCurrent configuration : 8117 bytes\n\
+      !\n! Last configuration change at 12:33:06 UTC Sun Nov 26 2023\n!\nversion 17.3\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service password-encryption\n! Call-home is enabled by Smart-Licensing.\nservice\
+      \ call-home\nplatform qfp utilization monitor load 80\nplatform punt-keepalive\
+      \ disable-kernel-core\nplatform console serial\n!\nhostname R6\n!\nboot-start-marker\n\
+      boot-end-marker\n!\n!\nvrf definition Mgmt-intf\n !\n address-family ipv4\n\
+      \ exit-address-family\n!\nno logging console\nenable secret 9 $9$Ur.yb3jp0hLWkk$84AbpO5q1Z3bDZg8pQJSDxeEWQ2PoPj5q9li7KcfmIw\n\
+      !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nip domain name\
+      \ diploma2.com\n!\n!\n!\nlogin on-success log\n!\n!\n!\n!\n!\n!\n!\nsubscriber\
+      \ templating\n!\n!\n!\n!\n!\n!\nmultilink bundle-name authenticated\n!\n!\n\
+      !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint SLA-TrustPoint\n\
+      \ enrollment pkcs12\n revocation-check crl\n!\ncrypto pki trustpoint TP-self-signed-3430966436\n\
+      \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-3430966436\n\
+      \ revocation-check none\n rsakeypair TP-self-signed-3430966436\n!\n!\ncrypto\
+      \ pki certificate chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209\
+      \ A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355\
+      \ 040A1305 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73\
+      \ 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338\
+      \ 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030\
+      \ 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130\
+      \ 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100\
+      \ A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147\
+      \ C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239\
+      \ C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9\
+      \ 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD\
+      \ C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7\
+      \ 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62\
+      \ EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD\
+      \ 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1\
+      \ 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13\
+      \ 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17\
+      \ 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24\
+      \ D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B\
+      \ 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E\
+      \ 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700\
+      \ 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6\
+      \ 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F\
+      \ 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA\
+      \ EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049\
+      \ 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \t\
+      quit\ncrypto pki certificate chain TP-self-signed-3430966436\n certificate self-signed\
+      \ 01\n  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+      \  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+      \  69666963 6174652D 33343330 39363634 3336301E 170D3233 31313236 31323133\n\
+      \  31305A17 0D333331 31323531 32313331 305A3031 312F302D 06035504 03132649\n\
+      \  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 34333039\n\
+      \  36363433 36308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201\n\
+      \  0A028201 0100D925 4FDC2DF1 2A7B6556 164768B0 6CE8933A 12C19DDC C554CD22\n\
+      \  ECD3DF85 0EC97541 432668F0 2BE01444 EA25E868 3A79248F 64C33231 3EF7D23F\n\
+      \  EBE667B7 62C7A88D A3B42497 BD93DB02 4F6FB0EC C55AE57C 86F193E3 8E1FA5F3\n\
+      \  02A76627 F4F62F20 40CAD355 8C116B9C AA514467 4B60CC89 AF56C5B7 E5C3050D\n\
+      \  DD1EE2E7 279C6A4D 6A1B4EC1 B83F9025 A00E60A8 A0AAB8F6 06DB788C 2DD85F84\n\
+      \  C336BE12 FE3C4624 774D12B8 DE5AD5CA 9BB299B1 BB4564E7 5BA47EDE 95AC2F6C\n\
+      \  3F2E9C7E 80224BDE C04C6264 837F7BE4 488724A9 E9FCC51F 276B4B7F F32ED23B\n\
+      \  2BA85D8A 841C9E2A FC675665 0A1C32FD 8EB72573 B9887479 207FB61C FF98D6D9\n\
+      \  3A49A4EF 6A7D0203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF\n\
+      \  301F0603 551D2304 18301680 14FDD82A 465DC615 330DA9E7 63C54BE1 441E76D3\n\
+      \  89301D06 03551D0E 04160414 FDD82A46 5DC61533 0DA9E763 C54BE144 1E76D389\n\
+      \  300D0609 2A864886 F70D0101 05050003 82010100 6298C76A B573A883 5F47A08A\n\
+      \  47B2AB9D DCD48CDD 1CD7B35C BD4CC3D6 D48302E2 727AF82D 0CCB724F C9757BAD\n\
+      \  015AE7CD E5F47E7B 1A5B5372 2EA4F96D F56C462F D0402BE2 E6751E83 C89D0511\n\
+      \  BC5E9CE5 46235DD8 963D5E1F 04FD9074 5B599DA9 1B85C2E7 0CB724CE A48E327F\n\
+      \  A11CE851 5F5062AB 4CBA0C41 37DD82FD 6A757F61 9C2A0C49 CBA96CAB 3E7B04FA\n\
+      \  1042FED9 CFC47F60 FC76AE23 2FAC9217 6FD9311C 828A61A3 8897E100 A18C3394\n\
+      \  6BD88E72 63A45D4C 5DA849D5 CA629A3A D4A89AB0 25876B5C E370C95D 7D2D0490\n\
+      \  8A2529E9 D0807E6E FF6EBB26 03A548D3 764752BF 0F4C5675 8AD1D3CD FCA76C07\n\
+      \  757E41EB FBA438A3 5EBBEB43 5A08340F 6CEFF568\n  \tquit\n!\nlicense udi pid\
+      \ CSR1000V sn 9A15EPSHHXS\ndiagnostic bootup level minimal\nmemory free low-watermark\
+      \ processor 71489\n!\n!\nspanning-tree extend system-id\n!\nusername Boti privilege\
+      \ 15 secret 9 $9$Eg.MOGpUPTi97.$mIWtu6opruzxkj6zdqA8l/ZcrrFNhGQsXPXb3Yes4fc\n\
+      !\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\nclass-map match-all CLASS-ALL-CoPP\n\
+      \ match access-group name ALL-CoPP\n!\npolicy-map POLICY-ALL-CoPP\n class CLASS-ALL-CoPP\n\
+      \  police 100000 conform-action transmit  exceed-action drop  violate-action\
+      \ drop\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface GigabitEthernet1\n\
+      \ description Link to Management\n vrf forwarding Mgmt-intf\n ip address 10.10.20.206\
+      \ 255.255.255.0\n negotiation auto\n no mop enabled\n no mop sysid\n!\ninterface\
+      \ GigabitEthernet2\n description Link to R5\n bandwidth 100\n ip address 172.16.56.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet3\n description Link to R8\n bandwidth 100\n ip address 172.16.68.1\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet4\n description Link to R2\n bandwidth 100\n ip address 172.16.26.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet5\n description Link to R4\n bandwidth 100\n ip address 172.16.46.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\nrouter ospf\
+      \ 1\n router-id 6.6.6.6\n network 0.0.0.0 255.255.255.255 area 0\n!\nip forward-protocol\
+      \ nd\nno ip http server\nip http secure-server\n!\nip route vrf Mgmt-intf 0.0.0.0\
+      \ 0.0.0.0 10.10.20.254\nip ssh version 2\n!\nip access-list standard permit_snmp\n\
+      \ 10 permit any\n!\nip access-list extended ALL-CoPP\n 10 permit ip any any\n\
+      !\n!\n!\nsnmp-server community public RO permit_snmp\n!\n!\n!\ncontrol-plane\n\
+      !\n!\n!\n!\n!\nbanner motd ^C***********************************************\n\
+      WARNING: Unauthorized access is prohibited!\n***********************************************\n\
+      ^C\n!\nline con 0\n exec-timeout 0 0\n password 7 13061E010803\n logging synchronous\n\
+      \ login\n stopbits 1\nline vty 0\n exec-timeout 0 0\n password 7 13061E010803\n\
+      \ logging synchronous\n login local\n transport input ssh\nline vty 1\n exec-timeout\
+      \ 0 0\n password 7 13061E010803\n logging synchronous\n login local\n length\
+      \ 0\n transport input ssh\nline vty 2 4\n exec-timeout 0 0\n password 7 13061E010803\n\
+      \ logging synchronous\n login local\n transport input ssh\nline vty 5 530\n\
+      \ password 7 070C285F4D06\n logging synchronous\n login local\n transport input\
+      \ ssh\n!\ncall-home\n ! If contact email address in call-home is configured\
+      \ as sch-smart-licensing@cisco.com\n ! the email address configured in Cisco\
+      \ Smart License Portal will be used as contact email address to send SCH notifications.\n\
+      \ contact-email-addr sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n\
+      \  active\n  destination transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n11
+    image_definition: null
+    label: R6
+    node_definition: csr1000v
+    ram: null
+    tags: []
+    x: 0
+    y: 200
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet2
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet3
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet4
+        slot: 3
+        type: physical
+      - id: i5
+        label: GigabitEthernet5
+        slot: 4
+        type: physical
+  - boot_disk_size: null
+    configuration: "Building configuration...\n\nCurrent configuration : 7884 bytes\n\
+      !\n! Last configuration change at 12:33:40 UTC Sun Nov 26 2023\n!\nversion 17.3\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service password-encryption\n! Call-home is enabled by Smart-Licensing.\nservice\
+      \ call-home\nplatform qfp utilization monitor load 80\nplatform punt-keepalive\
+      \ disable-kernel-core\nplatform console serial\n!\nhostname R7\n!\nboot-start-marker\n\
+      boot-end-marker\n!\n!\nvrf definition Mgmt-intf\n !\n address-family ipv4\n\
+      \ exit-address-family\n!\nno logging console\nenable secret 9 $9$96uQ8WcGNeK8Mk$bUEcozHaBjN4R0MEPzwj2Chek0ZlGhfrFUUm/5ZUZiY\n\
+      !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nip domain name\
+      \ diploma2.com\n!\n!\n!\nlogin on-success log\n!\n!\n!\n!\n!\n!\n!\nsubscriber\
+      \ templating\n!\n!\n!\n!\n!\n!\nmultilink bundle-name authenticated\n!\n!\n\
+      !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint SLA-TrustPoint\n\
+      \ enrollment pkcs12\n revocation-check crl\n!\ncrypto pki trustpoint TP-self-signed-3723898134\n\
+      \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-3723898134\n\
+      \ revocation-check none\n rsakeypair TP-self-signed-3723898134\n!\n!\ncrypto\
+      \ pki certificate chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209\
+      \ A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355\
+      \ 040A1305 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73\
+      \ 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338\
+      \ 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030\
+      \ 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130\
+      \ 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100\
+      \ A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147\
+      \ C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239\
+      \ C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9\
+      \ 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD\
+      \ C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7\
+      \ 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62\
+      \ EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD\
+      \ 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1\
+      \ 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13\
+      \ 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17\
+      \ 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24\
+      \ D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B\
+      \ 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E\
+      \ 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700\
+      \ 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6\
+      \ 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F\
+      \ 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA\
+      \ EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049\
+      \ 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \t\
+      quit\ncrypto pki certificate chain TP-self-signed-3723898134\n certificate self-signed\
+      \ 01\n  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+      \  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+      \  69666963 6174652D 33373233 38393831 3334301E 170D3233 31313236 31323133\n\
+      \  30335A17 0D333331 31323531 32313330 335A3031 312F302D 06035504 03132649\n\
+      \  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 37323338\n\
+      \  39383133 34308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201\n\
+      \  0A028201 0100C6E7 C85602DD DEE5D007 370EF191 493A15D5 F1FB89A2 D99C2655\n\
+      \  F84C8060 AF8ADB59 59C03134 EE0FBF66 C7FF45B2 693E5FED 99BA33B8 7A3F8AFA\n\
+      \  09CBA76B 882DEBF2 F988E4B1 E361676F 738B70E4 42CBAECA E904696F 79D0C497\n\
+      \  E70821D1 9BEC312C DE76C758 1E853929 7204C43C 16B5F6D8 905DA982 0C39FBA0\n\
+      \  BBF2F146 220CC308 0D0C00D9 A4BDC75B 1563F788 91E7982A 13C93ACF 6DD704A0\n\
+      \  8DA10DAA 8FE26EDB 6708E334 8AAED55C AD7DF427 EFE05FB6 8FD0D167 D399224B\n\
+      \  33AEA4DD 37872177 E8C433E6 888A7F94 9D67B0DE 949B0F3C 366D8256 D8816239\n\
+      \  AA899A3A 3B608E0B 69562ABD 13D4F5DA F65CE1B3 4BB18B13 B135554C 49662066\n\
+      \  9E2627F7 901B0203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF\n\
+      \  301F0603 551D2304 18301680 14E25BDA F8CFA276 FBB5D35B 9E0730C4 4088871D\n\
+      \  C9301D06 03551D0E 04160414 E25BDAF8 CFA276FB B5D35B9E 0730C440 88871DC9\n\
+      \  300D0609 2A864886 F70D0101 05050003 82010100 12BEEDAC 75985575 86BD2CA0\n\
+      \  B764358D A99FDD86 AA214A10 FB0CFC75 4BE3451B 0A13A977 D793AC06 13D01FCE\n\
+      \  800E613B 7A51CC9A 3C4CF899 27690296 9E0FF744 4D78031A 71FD48F8 45CD9E82\n\
+      \  FD0D6C02 E955FFD8 4D286331 C3DEE8FB 0BFE64CB 6839E862 3C3B6494 54D8378C\n\
+      \  C2FE2952 D46F2886 E06A6EBF 9AE9709C F13BF981 01ED2D89 E887C79F 0593C747\n\
+      \  6BF886A5 B990B79B EF9DE045 EC6AB19D C0754598 8E62E054 742F3267 240D138B\n\
+      \  0C892A7B CE3C7B41 6AD38651 D982FF53 7D86CDF7 C34A23D4 3C35F00F 06C99201\n\
+      \  32955DC4 81DFA219 800995D7 9AAAAA0F BDADD6D7 C2193A17 F68A995F 02AB5ED1\n\
+      \  E932ECE5 2B77E3F8 F5D6991F 2629D0D8 F3E24F9C\n  \tquit\n!\nlicense udi pid\
+      \ CSR1000V sn 93VPLI9V10M\ndiagnostic bootup level minimal\nmemory free low-watermark\
+      \ processor 71489\n!\n!\nspanning-tree extend system-id\n!\nusername Boti privilege\
+      \ 15 secret 9 $9$EF2owwJRwqY18.$ZBedQPC3IfmnZAkEDWfMzBW1nGYCIo9qrZOAVV.oing\n\
+      !\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\nclass-map match-all CLASS-ALL-CoPP\n\
+      \ match access-group name ALL-CoPP\n!\npolicy-map POLICY-ALL-CoPP\n class CLASS-ALL-CoPP\n\
+      \  police 100000 conform-action transmit  exceed-action drop  violate-action\
+      \ drop\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface GigabitEthernet1\n\
+      \ description Link to Management\n vrf forwarding Mgmt-intf\n ip address 10.10.20.207\
+      \ 255.255.255.0\n negotiation auto\n no mop enabled\n no mop sysid\n!\ninterface\
+      \ GigabitEthernet2\n description Link to R8\n bandwidth 100\n ip address 172.16.78.1\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet3\n description Link to R1\n bandwidth 100\n ip address 172.16.17.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet4\n description Link to R3\n bandwidth 100\n ip address 172.16.37.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\nrouter ospf\
+      \ 1\n router-id 7.7.7.7\n network 0.0.0.0 255.255.255.255 area 0\n!\nip forward-protocol\
+      \ nd\nno ip http server\nip http secure-server\n!\nip route vrf Mgmt-intf 0.0.0.0\
+      \ 0.0.0.0 10.10.20.254\nip ssh version 2\n!\nip access-list standard permit_snmp\n\
+      \ 10 permit any\n!\nip access-list extended ALL-CoPP\n 10 permit ip any any\n\
+      !\n!\n!\nsnmp-server community public RO permit_snmp\n!\n!\n!\ncontrol-plane\n\
+      !\n!\n!\n!\n!\nbanner motd ^C***********************************************\n\
+      WARNING: Unauthorized access is prohibited!\n***********************************************\n\
+      ^C\n!\nline con 0\n exec-timeout 0 0\n password 7 1511021F0725\n logging synchronous\n\
+      \ login\n stopbits 1\nline vty 0\n exec-timeout 0 0\n password 7 1511021F0725\n\
+      \ logging synchronous\n login local\n transport input ssh\nline vty 1\n exec-timeout\
+      \ 0 0\n password 7 1511021F0725\n logging synchronous\n login local\n length\
+      \ 0\n transport input ssh\nline vty 2 4\n exec-timeout 0 0\n password 7 1511021F0725\n\
+      \ logging synchronous\n login local\n transport input ssh\nline vty 5 530\n\
+      \ password 7 05080F1C2243\n logging synchronous\n login local\n transport input\
+      \ ssh\n!\ncall-home\n ! If contact email address in call-home is configured\
+      \ as sch-smart-licensing@cisco.com\n ! the email address configured in Cisco\
+      \ Smart License Portal will be used as contact email address to send SCH notifications.\n\
+      \ contact-email-addr sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n\
+      \  active\n  destination transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n12
+    image_definition: null
+    label: R7
+    node_definition: csr1000v
+    ram: null
+    tags: []
+    x: -320
+    y: 200
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet2
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet3
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet4
+        slot: 3
+        type: physical
+  - boot_disk_size: null
+    configuration: "Building configuration...\n\nCurrent configuration : 5696 bytes\n\
+      !\n! Last configuration change at 12:34:50 UTC Sun Nov 26 2023\n!\nversion 17.3\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service password-encryption\n! Call-home is enabled by Smart-Licensing.\nservice\
+      \ call-home\nplatform qfp utilization monitor load 80\nplatform punt-keepalive\
+      \ disable-kernel-core\nplatform console serial\n!\nhostname R8\n!\nboot-start-marker\n\
+      boot-end-marker\n!\n!\nvrf definition Mgmt-intf\n !\n address-family ipv4\n\
+      \ exit-address-family\n!\nno logging console\nenable secret 9 $9$1nDXoAqkZ7GtwU$z.BN99h2QX7prd7cae7LB8rgI5MUMb7s0yJwUwBw4YA\n\
+      !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nip domain name\
+      \ diploma2.com\n!\n!\n!\nlogin on-success log\n!\n!\n!\n!\n!\n!\n!\nsubscriber\
+      \ templating\n!\n!\n!\n!\n!\n!\nmultilink bundle-name authenticated\n!\n!\n\
+      !\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint SLA-TrustPoint\n\
+      \ enrollment pkcs12\n revocation-check crl\n!\n!\ncrypto pki certificate chain\
+      \ SLA-TrustPoint\n certificate ca 01\n  30820321 30820209 A0030201 02020101\
+      \ 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355 040A1305 43697363\
+      \ 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73 696E6720 526F6F74\
+      \ 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338 30353330 31393438\
+      \ 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030 1E060355 04031317\
+      \ 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130 82012230 0D06092A\
+      \ 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100 A6BCBD96 131E05F7\
+      \ 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147 C655D8D7 9471380D\
+      \ 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239 C659F715 B98C0A59\
+      \ 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9 60B1FD18 FFC69C96\
+      \ 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD C847A2C5 DAB553EB\
+      \ 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7 948E71D7 AE3BCC84\
+      \ F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62 EA2F505D C7B062A4\
+      \ 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD 3D992327 A8BB03BD\
+      \ 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1 02030100 01A34230\
+      \ 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13 0101FF04 05300301\
+      \ 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17 606AF333 3D3B4C73\
+      \ E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24 D3932A66 86025D9F\
+      \ E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B 77FC460E CD636FDB\
+      \ DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E 1AECA0C2 2189BB5C\
+      \ 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700 6ADF0F0D CF835015\
+      \ 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6 152E99B7 B1FCF9BB\
+      \ E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F 494E8A9E 07B85737\
+      \ F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA EEBC7CF9 8428787B\
+      \ 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049 4D10AB75 27E86F73\
+      \ 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \tquit\n!\nlicense udi\
+      \ pid CSR1000V sn 9ME0BBT37YS\ndiagnostic bootup level minimal\nmemory free\
+      \ low-watermark processor 71489\n!\n!\nspanning-tree extend system-id\n!\nusername\
+      \ Boti privilege 15 secret 9 $9$vMEc1.clsP06nE$DrYrxNGrlrZ5pj9TEcOtLlcaTuzzKlmYQ.h/QolCKrE\n\
+      !\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\nclass-map match-all CLASS-ALL-CoPP\n\
+      \ match access-group name ALL-CoPP\n!\npolicy-map POLICY-ALL-CoPP\n class CLASS-ALL-CoPP\n\
+      \  police 100000 conform-action transmit  exceed-action drop  violate-action\
+      \ drop\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface GigabitEthernet1\n\
+      \ description Link to Management\n vrf forwarding Mgmt-intf\n ip address 10.10.20.208\
+      \ 255.255.255.0\n negotiation auto\n no mop enabled\n no mop sysid\n!\ninterface\
+      \ GigabitEthernet2\n description Link to R7\n bandwidth 100\n ip address 172.16.78.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet3\n description Link to R6\n bandwidth 100\n ip address 172.16.68.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet4\n description Link to R4\n bandwidth 100\n ip address 172.16.48.2\
+      \ 255.255.255.252\n negotiation auto\n no mop enabled\n no mop sysid\n service-policy\
+      \ input POLICY-ALL-CoPP\n service-policy output POLICY-ALL-CoPP\n!\ninterface\
+      \ GigabitEthernet5\n description Link to LAN\n ip address 192.168.85.1 255.255.255.0\n\
+      \ negotiation auto\n no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet6\n\
+      \ no ip address\n shutdown\n negotiation auto\n no mop enabled\n no mop sysid\n\
+      !\nrouter ospf 1\n router-id 8.8.8.8\n network 0.0.0.0 255.255.255.255 area\
+      \ 0\n!\nip forward-protocol nd\nno ip http server\nip http secure-server\n!\n\
+      ip route vrf Mgmt-intf 0.0.0.0 0.0.0.0 10.10.20.254\nip ssh version 2\n!\nip\
+      \ access-list standard permit_snmp\n 10 permit any\n!\nip access-list extended\
+      \ ALL-CoPP\n 10 permit ip any any\n!\n!\n!\nsnmp-server community public RO\
+      \ permit_snmp\n!\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\nbanner motd ^C***********************************************\n\
+      WARNING: Unauthorized access is prohibited!\n***********************************************\n\
+      ^C\n!\nline con 0\n exec-timeout 0 0\n password 7 110A1016141D\n logging synchronous\n\
+      \ login\n stopbits 1\nline vty 0 4\n exec-timeout 0 0\n password 7 110A1016141D\n\
+      \ logging synchronous\n login local\n transport input ssh\nline vty 5 530\n\
+      \ password 7 110A1016141D\n logging synchronous\n login local\n transport input\
+      \ ssh\n!\ncall-home\n ! If contact email address in call-home is configured\
+      \ as sch-smart-licensing@cisco.com\n ! the email address configured in Cisco\
+      \ Smart License Portal will be used as contact email address to send SCH notifications.\n\
+      \ contact-email-addr sch-smart-licensing@cisco.com\n profile \"CiscoTAC-1\"\n\
+      \  active\n  destination transport-method http\n!\n!\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n13
+    image_definition: null
+    label: R8
+    node_definition: csr1000v
+    ram: null
+    tags: []
+    x: -160
+    y: 400
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet2
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet3
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet4
+        slot: 3
+        type: physical
+      - id: i5
+        label: GigabitEthernet5
+        slot: 4
+        type: physical
+      - id: i6
+        label: GigabitEthernet6
+        slot: 5
+        type: physical
+  - boot_disk_size: null
+    configuration: ums-a0cc1d3d-87
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n14
+    image_definition: null
+    label: unmanaged-switch-3
+    node_definition: unmanaged_switch
+    ram: null
+    tags: []
+    x: -160
+    y: 520
+    interfaces:
+      - id: i0
+        label: port0
+        slot: 0
+        type: physical
+      - id: i1
+        label: port1
+        slot: 1
+        type: physical
+      - id: i2
+        label: port2
+        slot: 2
+        type: physical
+      - id: i3
+        label: port3
+        slot: 3
+        type: physical
+      - id: i4
+        label: port4
+        slot: 4
+        type: physical
+      - id: i5
+        label: port5
+        slot: 5
+        type: physical
+      - id: i6
+        label: port6
+        slot: 6
+        type: physical
+      - id: i7
+        label: port7
+        slot: 7
+        type: physical
+  - boot_disk_size: null
+    configuration: |-
+      # this is a shell script which will be sourced at boot
+      hostname Server_2
+      # configurable user account
+      USERNAME=cisco
+      PASSWORD=cisco
+      ip address add 192.168.85.2/24 dev eth0
+      ip link set dev eth0 up
+      ip route add default via 192.168.85.1
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n15
+    image_definition: null
+    label: Server_2
+    node_definition: alpine
+    ram: null
+    tags: []
+    x: -40
+    y: 520
+    interfaces:
+      - id: i0
+        label: eth0
+        slot: 0
+        type: physical
+  - boot_disk_size: null
+    configuration: |-
+      # this is a shell script which will be sourced at boot
+      hostname Server_1
+      # configurable user account
+      USERNAME=cisco
+      PASSWORD=cisco
+      ip address add 192.168.15.2/24 dev eth0
+      ip link set dev eth0 up
+      ip route add default via 192.168.15.1
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n16
+    image_definition: null
+    label: Server_1
+    node_definition: alpine
+    ram: null
+    tags: []
+    x: -560
+    y: 160
+    interfaces:
+      - id: i0
+        label: eth0
+        slot: 0
+        type: physical
+  - boot_disk_size: null
+    configuration: |-
+      # this is a shell script which will be sourced at boot
+      hostname Client_2
+      # configurable user account
+      USERNAME=cisco
+      PASSWORD=cisco
+      ip address add 192.168.85.3/24 dev eth0
+      ip link set dev eth0 up
+      ip route add default via 192.168.85.1
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n17
+    image_definition: null
+    label: Client_2
+    node_definition: alpine
+    ram: null
+    tags: []
+    x: -280
+    y: 520
+    interfaces:
+      - id: i0
+        label: eth0
+        slot: 0
+        type: physical
+  - boot_disk_size: null
+    configuration: |-
+      # this is a shell script which will be sourced at boot
+      hostname Server_3
+      # configurable user account
+      USERNAME=cisco
+      PASSWORD=cisco
+      ip address add 192.168.55.2/24 dev eth0
+      ip link set dev eth0 up
+      ip route add default via 192.168.55.1
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n18
+    image_definition: null
+    label: Server_3
+    node_definition: alpine
+    ram: null
+    tags: []
+    x: 280
+    y: 120
+    interfaces:
+      - id: i0
+        label: eth0
+        slot: 0
+        type: physical
+annotations: []

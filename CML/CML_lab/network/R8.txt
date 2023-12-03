@@ -1,0 +1,90 @@
+enable
+configure terminal
+hostname R8
+ip domain name diploma2.com
+no ip domain lookup
+line console 0
+logging synchronous
+password cisco
+login
+exit
+crypto key gen rsa
+1024
+username Boti privilege 15 secret Halozat
+line vty 0 530
+logging synchronous
+password cisco
+login
+login local
+transport input ssh
+exit
+service password-encryption
+enable secret Class
+banner motd #***********************************************
+WARNING: Unauthorized access is prohibited!
+***********************************************
+#
+ip access-list extended ALL-CoPP
+permit ip any any
+exit
+class-map match-all CLASS-ALL-CoPP
+match access-group name ALL-CoPP
+exit
+policy-map POLICY-ALL-CoPP
+class CLASS-ALL-CoPP
+police 100000 conform-action transmit exceed-action drop violate-action drop 
+exit
+exit
+exit
+vrf definition Mgmt-intf
+address-family ipv4
+exit
+exit
+interface GigabitEthernet1
+vrf forwarding Mgmt-intf
+description Link to Management
+ip address 10.10.20.208 255.255.255.0
+ip route-cache
+no shutdown
+exit
+interface GigabitEthernet2
+description Link to R7
+ip address 172.16.78.2 255.255.255.252
+bandwidth 100
+service-policy input POLICY-ALL-CoPP 
+service-policy output POLICY-ALL-CoPP 
+no shutdown
+exit
+interface GigabitEthernet3
+description Link to R6
+ip address 172.16.68.2 255.255.255.252
+bandwidth 100
+service-policy input POLICY-ALL-CoPP 
+service-policy output POLICY-ALL-CoPP 
+no shutdown
+exit
+interface GigabitEthernet4
+description Link to R4
+ip address 172.16.48.2 255.255.255.252
+bandwidth 100
+service-policy input POLICY-ALL-CoPP 
+service-policy output POLICY-ALL-CoPP 
+no shutdown
+exit
+interface GigabitEthernet5
+description Link to LAN
+ip address 192.168.85.1 255.255.255.0
+no shutdown
+exit
+ip ssh version 2
+ip route vrf Mgmt-intf 0.0.0.0 0.0.0.0 10.10.20.254
+ip access-list standard permit_snmp
+permit any
+exit
+router ospf 1
+router-id 8.8.8.8
+network 0.0.0.0 0.0.0.0 area 0
+exit
+snmp-server community public RO permit_snmp
+end 
+copy running startup

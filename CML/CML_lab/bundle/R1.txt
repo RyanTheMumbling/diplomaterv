@@ -1,0 +1,61 @@
+enable
+configure terminal
+hostname BuR1
+ip domain name diploma2.com
+no ip domain lookup
+line console 0
+logging synchronous
+password cisco
+login
+exit
+crypto key gen rsa
+1024
+username Boti privilege 15 secret Halozat
+line vty 0 530
+logging synchronous
+password cisco
+login
+login local
+transport input ssh
+exit
+service password-encryption
+enable secret Class
+banner motd #***********************************************
+WARNING: Unauthorized access is prohibited!
+***********************************************
+#
+vrf definition Mgmt-intf
+address-family ipv4
+interface GigabitEthernet1
+vrf forwarding Mgmt-intf
+description Link to Management
+ip address 10.10.20.221 255.255.255.0
+ip route-cache
+no shutdown
+exit
+interface port-channel 1
+description Logical-link-to-R2
+ip address 172.17.12.1 255.255.255.252
+exit
+interface range gi2-5
+description Link to R2
+channel-group 1 mode active
+no shutdown
+exit
+interface GigabitEthernet6
+description Link to LAN
+ip address 192.168.16.1 255.255.255.0
+no shutdown
+exit
+ip ssh version 2
+ip route vrf Mgmt-intf 0.0.0.0 0.0.0.0 10.10.20.254
+ip access-list standard permit_snmp
+permit any
+exit
+router ospf 1
+router-id 1.1.1.11
+network 0.0.0.0 0.0.0.0 area 0
+exit
+snmp-server community public RO permit_snmp
+end 
+copy running startup
