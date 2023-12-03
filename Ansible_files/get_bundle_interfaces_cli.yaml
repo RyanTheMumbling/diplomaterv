@@ -1,0 +1,18 @@
+#get the interfaces
+#
+---
+- name: Retrieve interface information
+  hosts: bundle_routers
+  gather_facts: False
+  connection: network_cli
+  tasks:
+    - name: "Get the interfaces from the running config"
+      ios_command:
+        commands:
+          - show run | s interface
+      register: interface_info
+
+    - name: "Write interface_info to a text file"
+      copy:
+        content: "{{ interface_info.stdout[0] }}"
+        dest: "/home/botond/diplomatervezes2/bundle_interface_info/{{inventory_hostname}}.txt"

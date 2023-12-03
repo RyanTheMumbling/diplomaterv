@@ -1,0 +1,13 @@
+[routers]
+R1 ansible_host=10.10.20.201 ansible_python_interpreter="/usr/bin/env python" 
+R2 ansible_host=10.10.20.202 ansible_python_interpreter="/usr/bin/env python" 
+R3 ansible_host=10.10.20.203 ansible_python_interpreter="/usr/bin/env python" 
+R4 ansible_host=10.10.20.204 ansible_python_interpreter="/usr/bin/env python" 
+R5 ansible_host=10.10.20.205 ansible_python_interpreter="/usr/bin/env python" 
+R6 ansible_host=10.10.20.206 ansible_python_interpreter="/usr/bin/env python" 
+R7 ansible_host=10.10.20.207 ansible_python_interpreter="/usr/bin/env python" 
+R8 ansible_host=10.10.20.208 ansible_python_interpreter="/usr/bin/env python" 
+
+[bundle_routers]
+BuR1 ansible_host=10.10.20.221 ansible_python_interpreter="/usr/bin/env python" 
+BuR2 ansible_host=10.10.20.222 ansible_python_interpreter="/usr/bin/env python" 
